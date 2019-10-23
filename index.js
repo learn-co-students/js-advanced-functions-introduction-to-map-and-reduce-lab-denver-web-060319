@@ -11,7 +11,7 @@ const mapToNegativize = (array) => {
 const mapToNoChange = (array) => {
     let originalArray = []
     for (let i = 0; i < array.length; i++) {
-        originalArray.push(`${array[i]}`)
+        originalArray.push(array[i])
     };
     return originalArray;
 };
@@ -20,7 +20,7 @@ const mapToDouble = (array) => {
     let count = 0
     let arrayDoubled = []
     while (count < array.length) {
-        arrayDoubled.push(2 * `${array[count]}`)
+        arrayDoubled.push(2 * array[count])
         count += 1;
     };
     return arrayDoubled;
@@ -30,7 +30,7 @@ const mapToSquare = (array) => {
     let count = 0;
     let squaredArray = []
     do {
-        squaredArray.push(Math.pow(`${array[count]}`, 2))
+        squaredArray.push(Math.pow(array[count], 2))
         count += 1;
     } while (count < array.length)
     return squaredArray;    
